@@ -1,0 +1,38 @@
+{
+  "name": "Your Collection #2",
+  "description": "Remember to replace this description",
+  "image": "https://gateway.pinata.cloud/ipfs/QmXfuRkThiV9ExqM8F5s2usdMCLqyb355oLJ35f7vvTNja/2.png",
+  "dna": "69ae56a4608893e41edcf2484be75dbb86b75766",
+  "edition": 2,
+  "date": 1662019801103,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Eyeball",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Eye color",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Iris",
+      "value": "Medium"
+    },
+    {
+      "trait_type": "Shine",
+      "value": "Shapes"
+    },
+    {
+      "trait_type": "Bottom lid",
+      "value": "Middle"
+    },
+    {
+      "trait_type": "Top lid",
+      "value": "High"
+    }
+  ]
+}
