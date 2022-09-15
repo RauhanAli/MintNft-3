@@ -1,5 +1,6 @@
 //require("@nomicfoundation/hardhat-toolbox");
 require('@nomiclabs/hardhat-waffle');
+require("@nomiclabs/hardhat-etherscan");
 const dotenv = require("dotenv");
 dotenv.config({path: __dirname + '/.env'});
 const { CONTRACT_DEPLOYMENT_WALLET_PRIVATE_KEY, INFURA_API_KEY} = process.env;
@@ -38,6 +39,13 @@ module.exports = {
 			saveDeployments: true,
       chainId: 56
     },
+    
+  },
+  etherscan: {
+    apiKey: {
+      bsctestnet:"J9FHY4MFAVAS42EY3ZZEZ1ZAK6Z3NJAAG"
+    },
+   
   },
   
   solidity: {

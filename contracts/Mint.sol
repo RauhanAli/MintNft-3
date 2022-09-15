@@ -59,7 +59,10 @@ contract NFT is ERC721URIStorage, Ownable{
      function createToken(address _to) public payable returns (uint) {
         _tokenIds.increment();
         uint256 newitemId = _tokenIds.current();
-        require(supply < Maxsupply);
+         if (newitemId > 3) {
+    revert("NFT collection is sold out");
+         }
+        // require(supply < Maxsupply);
          tokenAddress.transferFrom(msg.sender,address(this),mintingRate);
         _safeMint(_to,newitemId);
     //    _setTokenURI(newitemId, tokenURI);
