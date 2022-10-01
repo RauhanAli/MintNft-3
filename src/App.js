@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HomePage from '../src/pages/home'
+
+export default function App(){
+  
+ return(
+  <div class="bg-gradient-to-r from-purple-500 to-indigo-900">
+     {/* <nav className="border-b">
+    <p className='text-4xl font-bold text-blue-900'>Crypto Gaming League NFTS</p>
+    <div className="mt-4"> */}
+   <BrowserRouter>
+    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/nft" element={<NFT />} /> */}
+      </Routes>
+    </BrowserRouter>
+    
+
+      </div>
+  
+ );
 }
-
-export default App;
