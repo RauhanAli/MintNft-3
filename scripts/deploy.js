@@ -1,6 +1,5 @@
 const hre = require("hardhat");
 //const PRICE = "500000000000000000" // 
-
 async function main() {
   try {
     const MyToken = await hre.ethers.getContractFactory("MyToken");

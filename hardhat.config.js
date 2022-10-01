@@ -41,11 +41,11 @@ module.exports = {
     },
     
   },
+  
   etherscan: {
-    apiKey: {
-      bsctestnet:"J9FHY4MFAVAS42EY3ZZEZ1ZAK6Z3NJAAG"
-    },
-   
+    // Your API key for Etherscan
+    // Obtain one at https://bscscan.com/
+    apiKey: "J9FHY4MFAVAS42EY3ZZXEZ1ZAK6Z3NJAAG"
   },
   
   solidity: {
